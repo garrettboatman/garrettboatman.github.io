@@ -1,0 +1,101 @@
+// Buttons
+button, a.button, input[type="submit"]{
+	
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: $alt-font-family;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 100px;
+	border: 2px solid #fff;
+	padding: .7em 1.5em;
+
+	@include transition(.3s background, .3s color);
+
+	&:hover{
+		background: #fff;
+		color: $primary-color;
+	}
+
+	@include media(max-width $mamabear){ 
+		font-size: .9em !important;
+	}
+
+}
+
+.home-bio-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg_1_bw.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+
+	.home-bio-overlay{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: rgba($primary-color, .8);
+		z-index: 1;
+	}
+
+}
+
+.home-bio{
+	
+	position: relative;;
+	z-index: 2;
+	color: #fff;
+
+	padding-top: 6em;
+	
+	@include media(max-width $mamabear){ 
+		padding-top: 2em;
+	}
+
+
+	.bio-img{
+		border-radius: 100%;
+		border: 3px solid #fff;
+		max-width: 160px;
+	}
+
+	.name{
+		font-family: $font-family !important;
+		font-weight: 100 !important;
+		font-style: italic;
+		font-size: 1.5em;
+		padding-top: 1em;
+	}
+
+	h1{
+		font-size: 2.3em !important;
+		margin-bottom: 1em;
+
+		@include media(max-width $mamabear){ 
+			font-size: 2em !important;
+		}
+
+	}
+
+}
+
+.jokes-home{
+	color: #fff;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	padding-bottom: 20px;
+
+	a{
+		color: #fff;
+	}
+
+	@include media(max-width $mamabear){ 
+		font-size: 1.2em;
+	}
+
+}
