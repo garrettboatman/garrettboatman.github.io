@@ -170,7 +170,7 @@ input[type='submit']
             background: rgba(#000, .8);
 
             @include transition(.3s opacity);
-            &:hover
+            &:hover, &:active
             {
                 opacity: 1;
             }
