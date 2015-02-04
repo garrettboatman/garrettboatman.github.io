@@ -3,6 +3,32 @@ layout: default
 title: "Garrett Boatman"
 fulltitle: "Garrett Boatman | Web Designer & Developer | Sacramento, CA"
 canonurl: http://garrettboatman.com
+
+projects: 
+  - name: Bamboo Creative
+    img: bamboocreative.jpg
+    url: bamboocreative.com
+    role: "Design, Development"
+  - name: "Jake & Amir"
+    img: jakeandamir.jpg
+    url: scripts.jakeandamir.com
+    role: "Design, Development"
+  - name: Lists.io
+    img: listsio.jpg
+    url: lists.io
+    role: "Front-End Development"
+  - name: Bayside Church
+    img: bayside.jpg
+    url: baysideonline.com
+    role: "Front & Back-End Development"
+  - name: Hope Quotient
+    img: hopequotient.jpg
+    url: hopequotient.com   
+    role: "Design, Development"
+  - name: TextJake
+    img: textjake.jpg
+    url: textjake.com
+    role: "Logo, Design, Development"
 ---
 <section class="home-bio-wrapper">
 	<div class="home-bio-overlay"></div>
@@ -12,10 +38,42 @@ canonurl: http://garrettboatman.com
 			<h3 class="name">I'm Garrett.</h3>
 			<h1>A Web Designer & Developer</h1>
 			<div>
-				<a href="mailto:{{site.email}}" class="button">{{site.email}}</a>
+				<a data-scroll href="#work" class="button">My Work</a>
 			</div>
+		</div>
+		<div class="jokes-home">I also do <a target="_blank" href="https://www.youtube.com/watch?v=Tin0hVb33z4">comedy</a>. If you're into that sort of thing.
 		</div>
 	</div>
 </section>
-<section class="jokes-home">I also do <a href="https://www.youtube.com/watch?v=Tin0hVb33z4">comedy</a>, if you're into that sort of thing.</section>
-<style></style>
+<section id="work" class="work">
+	{% for project in page.projects %}
+		<div class="project">
+			<img src="/img/{{project.img}}">
+			<div class="project-inner">
+				<h4>{{project.name}}</h4>
+				<div class="role">{{project.role}}</div>
+				<a target="_blank" class="button" href="http://{{project.url}}">View Project</a>
+			</div>
+		</div>
+	{% endfor %}
+</section>
+<section class="more">
+	<div>
+		...and hundreds more.
+	</div>
+	<br>
+	<div>
+		Also, check out my <a target="_blank" href="https://github.com/garrettboatman/Blank-Theme-Jekyll">Jekyll starter theme</a>, <a target="_blank" href="https://github.com/garrettboatman/ACF-5-Location-Migrator">ACF 5 Location Migrator</a>, & <a target="_blank" href="https://wordpress.org/plugins/booklaunch/">Booklaunch.io WP Plugin</a>
+	</div>
+</section>
+<section class="social">
+	<a class="button dark" target="_blank" href="https://www.linkedin.com/in/garrettboatman">Resumé</a>
+	<div class="social-share">
+		<a class="facebook" target="_blank" href="//facebook.com/{{site.facebook}}"><i class="icon-facebook"></i></a>
+		<a class="twitter" target="_blank" href="//twitter.com/{{site.twitter}}"><i class="icon-twitter"></i></a>
+		<a class="instagram" target="_blank" href="//instagram.com/{{site.instagram}}"><i class="icon-instagram"></i></a>
+		<a class="github" target="_blank" href="//github.com/{{site.github}}"><i class="icon-github"></i></a>
+		<a class="rdio" target="_blank" href="//rdio.com/people/garrettboatman"><i class="icon-rdio"></i></a>
+	</div>
+	<a href="mailto:hello@garrettboatman.com">hello@garrettboatman.com</a>
+</section>
