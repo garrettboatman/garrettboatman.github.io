@@ -118,7 +118,8 @@ input[type='submit']
 
     @include media(max-width $mamabear)
     {
-        font-size: 1.2em;
+        font-size: .9em;
+        margin-top: 4em;
     };
     a
     {
