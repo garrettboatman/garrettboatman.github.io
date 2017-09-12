@@ -1,23 +1,30 @@
-# Site settings
+---
 title: Garrett Boatman
-tagline: "Web Designer & Developer | Sacramento, CA"
-url: "http://garrettboatman.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-
-# Social
-socialimg: /img/social.jpg # be sure to change this image
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+tagline: Web Designer & Developer | Sacramento, CA
+url: http://garrettboatman.com
+socialimg: "/img/social.jpg"
 facebook: gboatman
 twitter: garrettboatman
 github: garrettboatman
 googleplus: GarrettBoatman
 instagram: garrettboatman
 rdio: garrettboatman
-
-# Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
-
+phone: 916-276-1044
+email: hello@garrettboatman.com
 sass:
   sass_dir: scss
   style: :compressed
-  
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude:
+- ".scss"
+- README.md
+- node_modules
+- gruntfile.js
+- package.json
