@@ -1,10 +1,10 @@
 ---
 title: Riskalyze Inc
-image: /img/rsk.png
+date: 2017-01-01 00:00:00 Z
+image: "/img/rsk.png"
 description: ui/ux design, front-end development
 id: riskalyze
 layout: page
-date: 2017-01-01
 ---
 
 I spent 13 months full-time on the engineering team at [Riskalyze](htts://riskalyze.com), a dope financial tech company.

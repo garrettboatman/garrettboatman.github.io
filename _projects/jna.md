@@ -1,11 +1,12 @@
 ---
 title: Jake & Amir Episode Archive
-image: /img/jna.png
+date: 2017-01-06 00:00:00 Z
+image: "/img/jna.png"
 description: Product design, ui/ux design, front-end development.
 id: jna
 layout: page
-date: 2017-01-06
 ---
+
 In 2013, I joined efforts with Christopher Chu and build the 800+ epsiode Script Archive for Jake & Amir. 
 
 This happened because of hundreds of hours spent by /r/jakeandamir redditors transcribing episodes.

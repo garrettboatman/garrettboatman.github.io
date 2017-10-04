@@ -1,11 +1,12 @@
 ---
 title: 1Echo
-image: /img/1echo.png
+date: 2017-01-02 00:00:00 Z
+image: "/img/1echo.png"
 description: Full website design & development
 id: echo
 layout: page
-date: 2017-01-02
 ---
+
 In summer 2017, I worked with 1Echo in Los Angeles to build a user-facing website for their product in the app store.
 
 Our two main goals were to:

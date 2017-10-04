@@ -1,10 +1,10 @@
 ---
 title: TextJake.com
-image: /img/textjake.png
+date: 2017-01-02 00:00:00 Z
+image: "/img/textjake.png"
 description: Product design, development, maintenance
 id: textjake
 layout: page
-date: 2017-01-02
 ---
 
 TextJake was a super fun product where fans could get personalized texting advice from Mr. Jake Hurwitz himself(from College Humor's [Jake & Amir](http://jakeandamir.com/)).
