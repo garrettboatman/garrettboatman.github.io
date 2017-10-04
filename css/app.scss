@@ -15,7 +15,7 @@ body, html{
 }
 
 // Some Style Variables
-$primary-color: #36465f;
+$primary-color: #4A90E2;
 $secondary-color: #464646;
 $error: #de3535;
 $success: #d5f5d7;
@@ -51,9 +51,9 @@ $papabear: 1140px;
 $monsterbear: 1300px;
 
 $font-size: 16px;
-$font-family:  'PT Serif', serif;
-$alt-font-family: 'Open Sans', sans-serif;
-$font-color: #353535;
+$font-family:  'Overpass', sans-serif;
+$alt-font-family: 'Overpass', sans-serif;
+$font-color: #4A4D50;
 
 
 
@@ -79,6 +79,7 @@ $spotify: 	#81b71a !default;
 	display: inline-block;
 	font-size: 21px;
 	position: relative;
+	margin: 3px;
 	
 	@include transition(.3s background);
 	
@@ -101,11 +102,16 @@ $spotify: 	#81b71a !default;
 	.rdio{background: $rdio; i{left: 2px; top: 6.5px;} &:hover{background: darken($rdio, 5%)}}
 	.dribbble{background: $dribbble; i{left: 3px; top: 8px;} &:hover{background: darken($dribbble, 5%)}}
 	.github{background: $github; i{left: -.5px; top: 7px;} &:hover{background: darken($github, 5%)}}
-	.spotify{background: $spotify; i{left: 1px; top: 7px;} &:hover{background: darken($spotify, 5%)}}
-	
+	.spotify{top: -3px;}
+
 	
 	.i-email{background: $email; i{left: 3px; top: 6px;} &:hover{background: darken($email, 10%)}}
 	/* End Social Icons */
+}
+
+.container{
+	max-width: 720px;
+	margin: 0 auto;
 }
 
 @import "fonts";

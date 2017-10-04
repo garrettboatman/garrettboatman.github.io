@@ -4,26 +4,31 @@ a.button,
 input[type='submit']
 {
     font-family: $alt-font-family;
-    font-size: 1.2em;
+    font-size: 16px;
 
     padding: .7em 2em;
+
+    font-weight: 600;
+    letter-spacing: .5px;
 
     text-decoration: none;
     text-transform: uppercase;
 
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 100px;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 3px;
+    transform: scale(1);
 
-    @include transition(.3s background, .3s color);
+    @include transition(.3s background, .3s color, .3s transform);
     @include media(max-width $mamabear)
     {
         font-size: .9em !important;
     }
     &:hover
     {
-        color: $primary-color;
-        background: #fff;
+        color: #fff;
+        background: $primary-color;
+        transform: scale(1.05);
     }
 
     &.dark{
@@ -39,15 +44,33 @@ input[type='submit']
 
 }
 
+.no-wrap{
+    white-space: nowrap;
+}
+
+.header-cta{
+
+    margin-top: 40px;
+
+    .button{
+        min-width: 200px;
+        margin: 8px;
+
+        @include media(max-width 480px)
+        {
+            width: 95%;
+        };
+
+    }
+}
+
 .home-bio-wrapper
 {
     position: relative;
     z-index: 1;
 
     width: 100%;
-    height: 100%;
 
-    background-image: url('../img/bg_1_bw.jpg');
     background-position: center;
     background-size: cover;
     .home-bio-overlay
@@ -57,8 +80,6 @@ input[type='submit']
 
         width: 100%;
         height: 100%;
-
-        background: rgba($primary-color, .2);
     }
 }
 
@@ -66,43 +87,52 @@ input[type='submit']
 {
     position: relative;
     z-index: 2;
+    padding-top: 5em;
+    padding-bottom: 7em;
 
-    padding-top: 6em;
 
-    color: #fff;
 
-    @include media(max-width $mamabear)
-    {
-        padding-top: 2em;
-    };
-    .bio-img
-    {
-        max-width: 160px;
-
-        border: 3px solid #fff;
-        border-radius: 100%;
-    }
     .name
     {
         font-family: $font-family !important;
-        font-size: 1.5em;
+        font-size: 24px;
         font-weight: 100 !important;
-        font-style: italic;
-
         padding-top: 1em;
+        padding-bottom: 2px;
     }
-    h1
+    h2
     {
-        font-size: 2.3em !important;
+        font-size: 24px;
+        font-weight: 100;
 
         margin-bottom: 1em;
 
         @include media(max-width $mamabear)
         {
-            font-size: 2em !important;
+            // font-size: 2em !important;
         }
     }
+
+    @include media(max-width 480px)
+    {
+        padding-top: 0em;
+        padding-bottom: 4em;
+
+        .name, h2{
+            font-size: 22px;
+        }
+    };
 }
+
+.bio-img
+{
+    max-width: 130px;
+    border: 5px solid #E4ECF6;
+    border-radius: 100%;
+    position: relative;
+    left: -5px;
+}
+
 
 .jokes-home
 {
@@ -129,79 +159,118 @@ input[type='submit']
 
 .work
 {
-    font-size: 0;
+    padding-top: 20px;
     .project
     {
-        font-size: $font-size;
+        text-decoration: none;
+        color: $font-color;
+        display: block;
+        padding: 20px 0;
 
-        position: relative;
-
-        display: inline-block;
-        overflow: hidden;
-
-        max-width: 33.33333333%;
-
-        @include media(max-width $mamabear){
-        	max-width: 50%;
+        &:hover{
+            h4, .role{
+                right: -10px;
+            }
+            h4{
+                color: $primary-color;
+            }
         }
 
+        h4{
+            margin-bottom: 0;
+        }
+
+        h4, .role {
+            @include transition(.3s right);
+            position: relative;
+            right: 0;
+        }
 
         img
         {
+            left: 0;
             position: relative;
             z-index: 1;
+            max-width: 35px;
+            margin-top: 32px;
+            margin-right: 15px;
+            margin-bottom: 40px;
         }
+
         .project-inner
         {
-            font-size: 1.3em;
-
-            position: absolute;
-            z-index: 2;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-
-            text-align: center;
-
-            opacity: 0;
-            color: #fff;
-            background: rgba(#000, .8);
-
-            @include transition(.3s opacity);
-            &:hover, &:active
-            {
-                opacity: 1;
-            }
-            a.button
-            {
-                font-size: .7em;
-
-                @include media(max-width $mamabear){
-                	font-size: .7em !important;
-                }                
-            }
-            h4
-            {
-                margin-bottom: 0;
-                padding-top: 50%;
-                margin-top: -70px;
-
-                @include media(max-width $mamabear){
-                	padding-top: 20px;
-                	margin-top: 0px;
-                }
-
-                
-            }
             .role
             {
-                padding: 20px 0;
-                font-size: .8em;
+                font-size: 18px;
             }
         }
     }
+}
+
+.new-work{
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+header#nav{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f1f7fd;
+    .bio-img{
+        max-width: 50px !important;
+        border-width: 2px;
+    }
+}
+
+
+
+p, li{
+    font-size: 20px;
+}
+
+@include media(max-width 640px)
+{
+    ul{
+        padding-left: 25px;
+    }
+    p, li{
+        font-size: 18px;
+    }
+}
+
+li{padding-bottom: 25px; line-height: 1.3em;}
+
+.resume, .proj-ext{
+    a{color: $primary-color;}
+    position: relative;
+    left: 0;
+    @include transition(.3s left);
+
+
+    &:hover{
+        left: 10px;
+    }
+
+}
+
+.resume{
+    margin: 60px 0;
+}
+
+figure.border{
+    img, video{border: 3px solid #f2f5ff;}
+}
+
+hr{
+    margin: 40px 0;
+    border-color: #f2f5ff !important;
+
+    &.small{
+        width: 65%;
+        margin-left: auto; margin-right: auto;
+    }
+
 }
 
 .more{
@@ -215,12 +284,76 @@ input[type='submit']
 	}
 }
 
+.nomargin{
+    margin: 0;
+}
+
 .social{
 	text-align: center;
 	padding: 3em 20px;
 
 	.social-share{
 		margin: 2em 0 1.7em;
+
+        a{
+            transition: .2s transform;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+
 	}
 }
 
+
+
+svg.s{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+}
+
+.bio-image{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.home-bio, .page, .new-work{
+    padding-left: 20px; padding-right: 20px;
+}
+
+.page{
+    figure{
+        margin-top: 30px;
+        display: block;
+        figcaption{
+            color: #a3b1bf;
+            padding-top: 5px;
+        }
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 53.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+@include media(min-width 1200px){
+    .break-out{
+        width: 1000px;
+        margin-left: -140px;
+    }
+}
