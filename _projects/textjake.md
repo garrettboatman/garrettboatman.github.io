@@ -10,7 +10,7 @@ layout: page
 TextJake was a super fun product where fans could get personalized texting advice from Mr. Jake Hurwitz himself(from College Humor's [Jake & Amir](http://jakeandamir.com/)).
 
 <figure class="text-center">
-  <img style="max-width: 400px;" src="/img/textjake.jpg" alt="">
+  <img style="width: 100%; max-width: 400px;" src="/img/textjake.jpg" alt="">
   <figcaption class="text-left">Screenshot from textjake.com</figcaption>
 </figure>
 

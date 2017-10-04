@@ -15,6 +15,6 @@ In 2015, I worked with the HeadGum podcast network in Los Angeles to create a lo
 </figure>
 
 <figure class="text-center">
-  <img style="max-width: 400px;" src="/img/hg.jpg" alt="">
+  <img style="width: 100%; max-width: 400px;" src="/img/hg.jpg" alt="">
   <figcaption>Screenshot of headgum.com</figcaption>
 </figure>
