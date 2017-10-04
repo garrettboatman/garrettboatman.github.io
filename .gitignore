@@ -3,9 +3,10 @@ _site
 .jekyll
 .bundle
 .sass-cache
-.idea/*
+.idea
 Gemfile
 Gemfile.lock
 node_modules
 package.json
 garrettboatman.*
+.idea/workspace.xml

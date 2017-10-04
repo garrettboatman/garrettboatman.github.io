@@ -1,10 +1,16 @@
-# Site settings
+---
 title: Garrett Boatman
-tagline: "Web Designer & Developer | Sacramento, CA"
-url: "http://garrettboatman.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
-
-# Social
-socialimg: /img/social.jpg # be sure to change this image
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+tagline: Web Designer & Developer | Sacramento, CA
+url: http://garrettboatman.com
+socialimg: "/img/social.jpg"
 facebook: gboatman
 twitter: garrettboatman
 github: garrettboatman
