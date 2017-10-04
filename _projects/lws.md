@@ -1,11 +1,12 @@
 ---
 title: Language World Services
-image: /img/lws.png
+date: 2017-01-04 00:00:00 Z
+image: "/img/lws.png"
 description: Full website design, development, & maintainance & CMS integration.
 id: lws
 layout: page
-date: 2017-01-04
 ---
+
 In 2015, I worked with Language World Services in Northern CA to build a clean but robust website for their translation services.
 
 
