@@ -7,7 +7,7 @@ id: riskalyze
 layout: page
 ---
 
-I spent 13 months full-time on the engineering team at [Riskalyze](htts://riskalyze.com), a dope financial tech company.
+I spent 13 months full-time on the engineering team at [Riskalyze](https://riskalyze.com), a dope financial tech company.
 
 I worked on front-end dev in Backbone.js & Marionette, ui/ux design, email API development, back-end development with Node.js, and some more fun stuff.
 
