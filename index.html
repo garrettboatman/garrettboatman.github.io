@@ -5,31 +5,6 @@ fulltitle: Garrett Boatman | Developer, designer, problem solver | Los Angeles, 
 canonurl: http://garrettboatman.com
 excerpt: I'm in the business of cultivating a beautiful web. I create intuitive digital
   experiences to improve the lives of people.
-projects:
-- name: Bamboo Creative
-  img: bamboocreative.jpg
-  url: bamboocreative.com
-  role: Design, Development
-- name: Jake & Amir
-  img: jakeandamir.jpg
-  url: scripts.jakeandamir.com
-  role: Design, Development
-- name: Lists.io
-  img: listsio.jpg
-  url: lists.io
-  role: Front-End Development
-- name: Bayside Church
-  img: bayside.jpg
-  url: baysideonline.com
-  role: Front & Back-End Development
-- name: Headgum
-  img: hg.jpg
-  url: headgum.com
-  role: Design, Development
-- name: TextJake
-  img: textjake.jpg
-  url: textjake.com
-  role: Logo, Design, Development
 ---
 
 <section class="home-bio-wrapper">
@@ -50,32 +25,8 @@ projects:
 		<h3 style="margin-top: 0; font-weight: 100; text-align: center;">TL;DR bio</h3>
 		<ul style="padding-left: 30px;">
 			<li><strong>What I do</strong>: mostly front-end development & ui/ux design for websites and web apps. I also have experience in back-end, native iOS & Android, plus marketing & SEO</li>
-			<li><strong>Technologies I work with</strong>: React, Backbone, Node.js, React Native, HTML5, CSS3, JQuery, Bootstrap (plus tons of time in Wordpress, Shopify, Jekyll, PHP & SQL)</li>
+			<li><strong>Technologies I work with</strong>: Javascript, React, Backbone, Node.js, React Native, CSS3, JQuery, Bootstrap (plus tons of time in Wordpress, Shopify, Jekyll, PHP & SQL)</li>
 			<li><strong>Things I hate</strong>: [space]s, slow websites, svn, bad design, closed-mindedness, Ticketmaster fees, the Lakers.</li>
-			<li><strong>My favorite recent projects:</strong></li>
 		</ul>
 	</div>
 </div>
-<section class="new-work">
-	<div id="work" class="work">
-		{% for project in site.projects %}
-		<a id="{{project.id}}" href="{{project.url}}" class="project">
-			<img align="left" src="{{project.image}}">
-			<div class="project-inner">
-				<h4>{{project.title}}</h4>
-				<div class="role">{{project.description}}</div>
-			</div>
-		</a>
-		{% endfor %}
-		<h4 class="resume"><a class="" target="_blank" href="https://www.linkedin.com/in/garrettboatman">See full resumé on LinkedIn &rarr;</a></h4>
-	</div>
-</section>
-<section class="more">
-	<div>
-		...and hundreds more.
-	</div>
-	<br>
-	<div>
-		Also, check out my <a target="_blank" href="https://github.com/garrettboatman/Blank-Theme-Jekyll">Jekyll starter theme</a>, <a target="_blank" href="https://github.com/garrettboatman/ACF-5-Location-Migrator">ACF 5 Location Migrator</a>, & <a target="_blank" href="https://wordpress.org/plugins/booklaunch/">Booklaunch.io WP Plugin</a>
-	</div>
-</section>
