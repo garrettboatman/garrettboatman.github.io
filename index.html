@@ -26,6 +26,30 @@ excerpt: I'm in the business of cultivating a beautiful web. I create intuitive 
 			<li><strong>What I do</strong>: mostly front-end development & ui/ux design for websites and web apps. I also have experience in back-end, native iOS & Android, plus marketing & SEO</li>
 			<li><strong>Technologies I work with</strong>: Javascript, React, Backbone, Node.js, React Native, CSS3, JQuery, Bootstrap (plus tons of time in Wordpress, Shopify, Jekyll, PHP & SQL)</li>
 			<li><strong>Things I hate</strong>: [space]s, slow websites, svn, bad design, closed-mindedness, Ticketmaster fees, the Lakers.</li>
+			<li><strong>Some recent projects:</strong></li>
 		</ul>
 	</div>
 </div>
+<section class="new-work">
+	<div id="work" class="work">
+		{% for project in site.projects %}
+		<a id="{{project.id}}" href="{{project.url}}" class="project">
+			<img align="left" src="{{project.image}}">
+			<div class="project-inner">
+				<h4>{{project.title}}</h4>
+				<div class="role">{{project.description}}</div>
+			</div>
+		</a>
+		{% endfor %}
+		<h4 class="resume"></h4>
+	</div>
+</section>
+<section class="more">
+	<div>
+		...and hundreds more.
+	</div>
+	<br>
+	<div>
+		Additionally, check out my <a target="_blank" href="https://github.com/garrettboatman/Blank-Theme-Jekyll">Jekyll starter theme</a> & <a target="_blank" href="https://github.com/garrettboatman/ACF-5-Location-Migrator">ACF 5 Location Migrator</a>
+	</div>
+</section>
